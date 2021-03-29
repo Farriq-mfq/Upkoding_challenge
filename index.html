@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piramide</title>
+</head> 
+<body style="background-color: #333;">
+    <form id="Form" style="margin:20px">
+        <input type="number" min="0" id="number">
+        <button>submit</button>
+    </form>
+    <pre style="color:#fff;margin: 20px;" id="pre"></pre>
+    <script>
+        const form = document.querySelector('#Form');
+        const pre = document.querySelector('#pre');
+        form.addEventListener('submit',(e)=>{
+            pre.innerHTML = ""
+            const value = document.querySelector("#number").value;
+            var row
+            e.preventDefault();
+            if(value == ''){
+                alert()
+            }else{
+                for (let row = 0; row <= value-1; row++) {
+                    for (let j = 0; j <= value-row; j++) {
+                     pre.innerHTML+=' '; 
+                    }
+                    for (let k = 0; k <= 2*row; k++) {
+                        pre.innerHTML+='*'; 
+                    }
+                    
+                    pre.innerHTML+="\n"; 
+                }
+            }
+        })
+    </script>
+</body>
+</html>
