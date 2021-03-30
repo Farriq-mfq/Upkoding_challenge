@@ -28,16 +28,20 @@ body::before{
     position: relative;
     display: flex;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 .container{
     position: absolute;
-    top: 15px;
     width: 432px;
     height: 496px;
     background: #E8ECF0;
     box-shadow: 0px 30px 20px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
 
 }
 form{
@@ -199,7 +203,7 @@ label{
 }
 
 /* reponsive */
-@media only screen and (max-width: 440px){
+@media only screen and (max-width: 443px){
     body::before{
         opacity: 0.9;
 
@@ -210,7 +214,7 @@ label{
     .container{
         position: absolute;
         top: 50px;
-        width: 300px;
+        width: 350px;
         height: 496px;
         background: #E8ECF0;
         box-shadow: 0px 30px 20px rgba(0, 0, 0, 0.2);
@@ -229,7 +233,7 @@ label{
     .propertieess{
         left: 0;
         margin-top: 20px;
-        width: 300px;
+        width: 350px;
     }
 }
 @media only screen and (max-width: 375px){
