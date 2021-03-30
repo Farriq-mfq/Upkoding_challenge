@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Hotel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/Pepper-Grinder/jquery-ui.css">
+</head>
+<body>
+    <div class="layer">
+        <div class="container">
+            <form>
+                <h1 class="the_title">
+                    Hotel booking
+                </h1>
+                <div class="formGroup">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" class="location">
+                </div>
+                <div class="formGroup">
+                    <div class="chekIn_out">
+                        <div class="chekin">
+                            <label for="CKIN">Check-in</label>
+                            <input type="text" id="CKIN" class="checkIn picker">
+                        </div>
+                        <span class="line"></span>
+                        <div class="chekout">
+                            <label for="CKOUT">Check-out</label>
+                            <input type="text" id="CKOUT" class="checkOut picker">
+                        </div>
+                    </div>
+                </div>
+                <div class="formGroup">
+                    <div class="room_adults_kids">
+                        <div class="rmm">
+                            <label for="room">Room</label>
+                            <input type="number" min="0" id="room" class="room">
+                        </div>
+                        <span class="lines1"></span>
+                        <div class="adl">
+                            <label for="adults">Adults</label>
+                            <input type="number" min="0" id="adults" class="adults">
+                        </div>
+                        <span class="lines2"></span>
+                        <div class="kds">
+                            <label for="kids">Kids</label>
+                            <input type="number" min="0" id="kids" class="kids">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="propertieess">
+                <h1 class="title_propre">Show 39 properties</h1>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+      $(function(){
+          $(".picker").datepicker();
+      })
+  </script>
+</body>
+</html>
